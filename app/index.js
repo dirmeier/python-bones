@@ -1,12 +1,20 @@
-'use strict';
+"use strict";
 
 var Generator = require("yeoman-generator");
 var chalk = require("chalk");
 var yosay = require("yosay");
+var superb = require("superb");
 var mkdirp = require("mkdirp");
+var validator = require("validator");
 
 module.exports = class extends Generator {
     prompting() {
+
+        this.log(yosay(
+            "Welcome to " + superb() + " python-bones!\n" +
+            "I'll walk you through the installation."
+        ));
+
         return this.prompt([{
             type: "input",
             name: "user",
@@ -16,7 +24,10 @@ module.exports = class extends Generator {
             type: "input",
             name: "email",
             message: "What\'s your email adress?",
-            default: "user@noreply.com"
+            default: "user@noreply.com",
+            validate: function (input) {
+                return validator.isEmail(input);
+            }
         }, {
             type: "input",
             name: "projectID",
@@ -49,16 +60,16 @@ module.exports = class extends Generator {
         var conff = ["conf.py", "examples.rst", "index.rst", "modules.rst", "tutorial.rst"]
         for (var i in conff) {
             this.fs.copyTpl(
-            this.templatePath("docs/source/" + conff[i]),
-            this.destinationPath("docs/source/" + conff[i]), {
-                projectID: this.args.projectID,
-                desc: this.args.desc,
-                email: this.args.email,
-                user: this.args.user
-            });
+                this.templatePath("docs/source/" + conff[i]),
+                this.destinationPath("docs/source/" + conff[i]), {
+                    projectID: this.args.projectID,
+                    desc: this.args.desc,
+                    email: this.args.email,
+                    user: this.args.user
+                });
         }
 
-        var fls = ["__init__.py", "emptyproject.py" ]
+        var fls = ["__init__.py", "emptyproject.py"]
         for (var i in fls) {
             this.fs.copyTpl(
                 this.templatePath(fls[i]),
@@ -67,7 +78,7 @@ module.exports = class extends Generator {
                     desc: this.args.desc,
                     email: this.args.email,
                     user: this.args.user
-            });
+                });
         }
 
         this.fs.copyTpl(

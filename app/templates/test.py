@@ -27,7 +27,7 @@ import unittest
 
 class Test(unittest.TestCase):
     def setUp(self):
-       self.a = 1
+        self.a = 1
 
     def test_me(self):
         b = 1
