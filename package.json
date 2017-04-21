@@ -1,0 +1,42 @@
+{
+  "name": "generator-python-bones",
+  "version": "0.0.1",
+  "description": "A yeoman-generator for Python projects",
+  "keywords": [
+    "yeoman-generator",
+    "python",
+    "pypi",
+    "conda"
+  ],
+  "author": {
+    "name": "Simon Dirmeier",
+    "email": "mail@simon-dirmeier.net",
+    "url": "https://github.com/dirmeier"
+  },
+  "scripts": {
+    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "superb": "^1.3.0",
+    "validator": "^7.0.0",
+    "yeoman-generator": "^1.0.0",
+    "yosay": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dirmeier/python-bones"
+  },
+  "devDependencies": {
+    "codecov": "^2.1.0",
+    "eslint": "^3.19.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.6.0"
+  }
+}

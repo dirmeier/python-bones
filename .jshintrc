@@ -1,0 +1,27 @@
+{
+ "asi"           : true, 
+ "laxbreak"      : false, 
+ "bitwise"       : true, 
+ "boss"          : false,
+ "curly"         : false, 
+ "eqeqeq"        : true, 
+ "eqnull"        : false,
+ "evil"          : true,
+ "expr"          : false,
+ "forin"         : false,
+ "immed"         : true,
+ "latedef"       : true,
+ "loopfunc"      : false,
+ "noarg"         : true, 
+ "regexp"        : true, 
+ "regexdash"     : false,
+ "scripturl"     : true, 
+ "shadow"        : false,
+ "supernew"      : false,
+ "undef"         : true, 
+  "globals": {
+    "jQuery": true,
+    "d3": false,
+    "$": false
+  }
+}
