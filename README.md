@@ -15,43 +15,53 @@ A yeoman generator for Python projects.
 `python-bones` is a yeoman-generator for `Python`-projects using `setuptools`. Projects created with `python-bones` are ready for publication to `pypi` and `conda`. The generator creates
 
 * a GPL3 license,
+* packaging with `setup.py`,
 * static code analysis and reports using `pylint`,
-* a unit-test suite using `pytest/unittest` and standard logging,
+* a unit-test suite using `pytest/unittest`,
 * badges for the *project status*, *build status* using Travis CI and *code coverage* using Codecov,
-* custom README.md, TODO.md and VERSIONS.md files and
+* documentation with `readthedocs.io`,
+* custom README.md, TODO.md and VERSIONS.md files,
+* documentation using `sphinx`,
+* `build.sh`, `bld.dat` and `meta.yaml` for `conda` packages,
+*
 * a prototype `__init__.py` + `test.py`.
 
 The resulting folder-structure looks like this:
 
 ```sh
 	|____.codecov.yml
-	|____.gitattributes
-	|____.gitignore
-	|____.travis.yml
-	|____.yo-rc.json
-	|____build.sh
-	|____checkstyle.xml
-	|____emptyproject4j
-	|____LICENSE
-	|____pom.xml
-	|____README.md
-	|____ruleset.xml
-	|____src
-	| |____main
-	| | |____java
-	| | | |____net
-	| | | | |____groupID
-	| | | | | |____emptyproject4j
-	| | | | | | |____Main.java
-	| |____test
-	| | |____java
-	| | | |____net
-	| | | | |____groupID
-	| | | | | |____tests
-	| | | | | | |____emptyproject4j
-	| | | | | | | |____TestSuite.java
-	|____TODO.md
-	|____VERSIONS.md
+    |____.coveragerc
+    |____.gitattributes
+    |____.gitignore
+    |____.pylintrc
+    |____.travis.yml
+    |____.yo-rc.json
+    |____bld.dat
+    |____build.sh
+    |____docs
+    | |____Makefile
+    | |____source
+    | | |____conf.py
+    | | |____examples.rst
+    | | |____index.rst
+    | | |____modules.rst
+    | | |____tutorial.rst
+    |____emptyproject
+    | |______init__.py
+    | |____emptyproject.py
+    |____install.sh
+    |____LICENSE
+    |____MANIFEST.in
+    |____meta.yaml
+    |____README.rst
+    |____requirements.txt
+    |____setup.cfg
+    |____setup.py
+    |____test.sh
+    |____tests
+    | |____test_me.py
+    |____TODO.md
+    |____VERSIONS.md
 ```
 
 ## Installation
