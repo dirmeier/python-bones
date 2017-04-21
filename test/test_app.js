@@ -22,7 +22,7 @@ describe("python-bones:app", function () {
             "build.sh", "emptyproject", "meta.yaml", "requirements.txt",
             "setup.py", "setup.cfg",
             "test.sh", "tests/test_me.py",
-            "docs/MakeFile", "docs/source/conf.py", "docs/source/examples.rst",
+            "docs/Makefile", "docs/source/conf.py", "docs/source/examples.rst",
             "docs/source/index.rst", "docs/source/modules.rst", "docs/source/tutorial.rst",
             "emptyproject/__init__.py", "emptyproject/emptyproject.py"
         ]);
