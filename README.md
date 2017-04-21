@@ -28,7 +28,7 @@ A yeoman generator for Python projects.
 The resulting folder-structure looks like this:
 
 ```sh
-	|____.codecov.yml
+    |____.codecov.yml
     |____.coveragerc
     |____.gitattributes
     |____.gitignore
