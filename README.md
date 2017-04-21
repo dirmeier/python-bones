@@ -78,13 +78,12 @@ Once you have the package, you can create a scaffold using:
   yo python-bones
 ```
 
-This builds the skeleton. Afterwards modify the sources and build the package with:
+This builds the skeleton. Afterwards modify the sources and documentation and build both using:
 
 ```sh
-  ./${packageID}
+  pip install -e .
+  cd docs && make html
 ```
-
-where `${packageID}` will be the name of your package.
 
 ## Author
 
