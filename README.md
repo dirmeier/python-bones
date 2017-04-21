@@ -19,12 +19,10 @@ A yeoman generator for Python projects.
 * static code analysis and reports using `pylint`,
 * a unit-test suite using `pytest/unittest`,
 * badges for the *project status*, *build status* using Travis CI and *code coverage* using Codecov,
-* documentation with `readthedocs.io`,
+* documentation with `readthedocs.io` and `sphinx`,
 * custom README.md, TODO.md and VERSIONS.md files,
-* documentation using `sphinx`,
 * `build.sh`, `bld.dat` and `meta.yaml` for `conda` packages,
-*
-* a prototype `__init__.py` + `test.py`.
+* a prototype `__init__.py` and `test.py`.
 
 The resulting folder-structure looks like this:
 
