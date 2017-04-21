@@ -2,11 +2,12 @@
 
 [![Project Status](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
 [![travis](https://travis-ci.org/dirmeier/python-bones.svg?branch=master)](https://travis-ci.org/dirmeier/python-bones)
-[![appveyor](https://ci.appveyor.com/api/projects/status/ugxd2285camqs6ud/branch/master?svg=true)](https://ci.appveyor.com/project/dirmeier/python-bones/branch/master)
+[![appveyor](https://ci.appveyor.com/api/projects/status/6kpnkmlva9hio2hc?svg=true)](https://ci.appveyor.com/project/dirmeier/python-bones)
 [![codecov](https://codecov.io/gh/dirmeier/python-bones/branch/master/graph/badge.svg)](https://codecov.io/gh/dirmeier/python-bones)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fc5f2b85be274404990b9282eeaa484d)](https://www.codacy.com/app/simon-dirmeier/python-bones?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dirmeier/java-bones&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc7de342ad8245129d5cd1e1df98fb62)](https://www.codacy.com/app/simon-dirmeier/python-bones?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dirmeier/python-bones&amp;utm_campaign=Badge_Grade)
 [![npm version](https://badge.fury.io/js/generator-python-bones.svg)](https://www.npmjs.com/package/generator-python-bones)
 [![npm download](https://img.shields.io/npm/dt/generator-python-bones.svg)](https://www.npmjs.com/package/generator-python-bones)
+
 
 A yeoman generator for Python projects.
 
