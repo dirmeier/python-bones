@@ -10,3 +10,6 @@ install:
 
 script:
   - npm test
+
+after_success:
+  - codecov
