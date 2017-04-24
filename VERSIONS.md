@@ -1,6 +1,10 @@
 ## Versions
 
-### v0.0.2
+### v0.0.7
+
+* adds some template files
+
+### v0.0.2 - v0.0.6
 
 * some bug fixes and readme updates
 
@@ -9,7 +13,3 @@
 * Init for `python-bones`
 * CI, .etc.
 * npm
-
-### Author
-
-* Simon Dirmeier <a href="mailto:mail@simon-dirmeier.net">mail@simon-dirmeier.net</a>

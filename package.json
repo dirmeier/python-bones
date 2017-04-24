@@ -1,6 +1,6 @@
 {
   "name": "generator-python-bones",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A yeoman-generator for Python projects",
   "homepage": "https://github.com/dirmeier/python-bones",
   "keywords": [
@@ -12,7 +12,7 @@
   ],
   "author": {
     "name": "Simon Dirmeier",
-    "email": "mail@simon-dirmeier.net",
+    "email": "simon.dirmeier@web.de",
     "url": "https://github.com/dirmeier"
   },
   "scripts": {
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dirmeier/python-bonesi.git"
+    "url": "https://github.com/dirmeier/python-bones.git"
   },
   "devDependencies": {
     "codecov": "^2.1.0",
