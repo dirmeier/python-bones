@@ -1,6 +1,6 @@
 {
   "name": "generator-python-bones",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A yeoman-generator for Python projects",
   "homepage": "https://github.com/dirmeier/python-bones",
   "keywords": [
