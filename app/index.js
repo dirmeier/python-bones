@@ -70,7 +70,8 @@ module.exports = class extends Generator {
         }
 
         var fls = ["__init__.py", "emptyproject.py"]
-        for (var i in fls) {
+        for (var i in fls)
+        {
             this.fs.copyTpl(
                 this.templatePath(fls[i]),
                 this.destinationPath(this.args.projectID + "/" + fls[i]), {
@@ -82,24 +83,6 @@ module.exports = class extends Generator {
         }
 
         this.fs.copyTpl(
-            this.templatePath("setup.py"),
-            this.destinationPath("setup.py"), {
-                projectID: this.args.projectID,
-                githubuser: this.args.githubuser,
-                desc: this.args.desc,
-                email: this.args.email,
-                user: this.args.user,
-            });
-
-        this.fs.copyTpl(
-            this.templatePath("meta.yaml"),
-            this.destinationPath("meta.yaml"), {
-                projectID: this.args.projectID,
-                githubuser: this.args.githubuser,
-                desc: this.args.desc
-            });
-
-        this.fs.copyTpl(
             this.templatePath("test.py"),
             this.destinationPath("tests/test_me.py"), {
                 projectID: this.args.projectID,
@@ -108,37 +91,29 @@ module.exports = class extends Generator {
                 user: this.args.user
             });
 
-        this.fs.copyTpl(
-            this.templatePath("README.rst"),
-            this.destinationPath("README.rst"), {
+        var els = ["README.rst", "meta.yaml", "setup.py", "TODO.md", "VERSIONS.md"]
+        for (i in els)
+        {
+          this.fs.copyTpl(
+              this.templatePath(els[i]),
+              this.destinationPath(els[i]), {
                 projectID: this.args.projectID,
                 githubuser: this.args.githubuser,
                 desc: this.args.desc,
                 email: this.args.email,
                 user: this.args.user
-            });
+              });
+        }
 
-        this.fs.copyTpl(
-            this.templatePath("TODO.md"),
-            this.destinationPath("TODO.md"), {
-                email: this.args.email,
-                user: this.args.user
-            });
-
-        this.fs.copyTpl(
-            this.templatePath("VERSIONS.md"),
-            this.destinationPath("VERSIONS.md"), {
-                email: this.args.email,
-                user: this.args.user
-            });
 
         var cops = [
             "bld.dat", "build.sh", "install.sh",
             "LICENSE", "MANIFEST.in", "requirements.txt",
-            "setup.cfg", "test.sh"
+            "setup.cfg", "test.sh", "tox.ini"
         ];
 
-        for (var i in cops) {
+        for (var i in cops)
+        {
             this.fs.copy(
                 this.templatePath(cops[i]),
                 this.destinationPath(cops[i]));
@@ -146,10 +121,11 @@ module.exports = class extends Generator {
 
         var hcops = [
             "codecov.yml", "coveragerc", "gitignore",
-            "gitattributes", "pylintrc", "travis.yml"
+            "gitattributes", "pylintrc", "travis.yml", "bandit.yml"
         ];
 
-        for (var i in hcops) {
+        for (var i in hcops)
+        {
             this.fs.copy(
                 this.templatePath(hcops[i]),
                 this.destinationPath("." + hcops[i]));
