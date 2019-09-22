@@ -1,6 +1,6 @@
 # Python-bones
 
-[![Project Status](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
+[![Project Status](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
 [![travis](https://travis-ci.org/dirmeier/python-bones.svg?branch=master)](https://travis-ci.org/dirmeier/python-bones)
 [![appveyor](https://ci.appveyor.com/api/projects/status/6kpnkmlva9hio2hc?svg=true)](https://ci.appveyor.com/project/dirmeier/python-bones)
 [![codecov](https://codecov.io/gh/dirmeier/python-bones/branch/master/graph/badge.svg)](https://codecov.io/gh/dirmeier/python-bones)
