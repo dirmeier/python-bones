@@ -1,0 +1,11 @@
+[flake8]
+max-line-length = 80
+exclude =
+    .git/,
+    __pycache__/,
+    build/,
+    dist/,
+    docs/,
+    examples/,
+    tests/
+    pybda/__init__.py

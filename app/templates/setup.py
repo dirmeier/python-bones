@@ -4,6 +4,21 @@ def readme():
     with open('README.rst') as f:
         return f.read()
 
+test_deps = [
+    'coverage',
+    'flake8',    
+    'pytest>=3.6.2',
+    'pytest-cov',
+    'pytest-pep8',
+    'yapf'
+]
+
+doc_deps = [
+    'sphinx',
+    'sphinx_fontawesome',
+    'sphinxcontrib-fulltoc'
+]
+
 setup(
     name='<%= projectID %>',
     version='0.0.1',
@@ -34,6 +49,7 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6'
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7'
     ]
 )

@@ -91,7 +91,7 @@ module.exports = class extends Generator {
                 user: this.args.user
             });
 
-        var els = ["README.rst", "meta.yaml", "setup.py", "TODO.md", "VERSIONS.md"]
+        var els = ["README.rst", "setup.py", "TODO.md", "VERSIONS.md"]
         for (i in els)
         {
           this.fs.copyTpl(
@@ -106,10 +106,9 @@ module.exports = class extends Generator {
         }
 
 
-        var cops = [
-            "bld.dat", "build.sh", "install.sh",
-            "LICENSE", "MANIFEST.in", "requirements.txt",
-            "setup.cfg", "test.sh", "tox.ini"
+        var cops = [            
+            "LICENSE", "MANIFEST.in",
+            "setup.cfg", "tox.ini"
         ];
 
         for (var i in cops)
@@ -120,8 +119,9 @@ module.exports = class extends Generator {
         }
 
         var hcops = [
-            "codecov.yml", "coveragerc", "gitignore",
-            "gitattributes", "pylintrc", "travis.yml", "bandit.yml"
+            "bandit.yml", "codecov.yml", "coveragerc",
+            "gitignore", "gitattributes", "flake8", 
+            "readthedocs.yml", "styles.yapf", "travis.yml"
         ];
 
         for (var i in hcops)
