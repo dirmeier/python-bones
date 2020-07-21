@@ -33,7 +33,7 @@
     "url": "https://github.com/dirmeier/python-bones.git"
   },
   "devDependencies": {
-    "codecov": "^2.1.0",
+    "codecov": "^3.7.1",
     "eslint": "^3.19.0",
     "istanbul": "^0.4.5",
     "jshint": "^2.9.4",
